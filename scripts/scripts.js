@@ -146,3 +146,4 @@ function decorateLinkedPictures(block) {
     a.append(picture);
   });
 }
+
