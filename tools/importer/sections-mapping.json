@@ -30,12 +30,18 @@
             "color": "rgba(148, 0, 211, 0.4)",
             "mapping": "header",
             "customBlockName": ""
-          },
+          }
+        ],
+        "settings": {}
+      },
+      {
+        "id": "1-2",
+        "blocks": [
           {
             "id": "box-id-1388725091",
-            "x": 0,
+            "x": 70,
             "y": 143,
-            "width": 1231,
+            "width": 1440,
             "height": 55,
             "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
             "layout": {
@@ -43,14 +49,22 @@
               "numRows": 0
             },
             "color": "rgba(148, 0, 211, 0.4)",
-            "mapping": "header",
+            "mapping": "defaultContent",
             "customBlockName": ""
-          },
+          }
+        ],
+        "settings": {
+          "section-metadata-style": "hidden,dark-grey"
+        }
+      },
+      {
+        "id": "1-3",
+        "blocks": [
           {
             "id": "box-id--639543998",
-            "x": 0,
+            "x": 70,
             "y": 199,
-            "width": 1231,
+            "width": 1440,
             "height": 55,
             "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]",
             "layout": {
@@ -58,11 +72,13 @@
               "numRows": 0
             },
             "color": "rgb(75, 0, 130)",
-            "mapping": "header",
+            "mapping": "defaultContent",
             "customBlockName": ""
           }
         ],
-        "settings": {}
+        "settings": {
+          "section-metadata-style": "hidden,dark-grey"
+        }
       }
     ]
   },
@@ -209,7 +225,7 @@
               }
             ],
             "color": "rgba(0, 0, 255, 0.3)",
-            "mapping": "cards",
+            "mapping": "columns",
             "customBlockName": ""
           }
         ],
@@ -252,32 +268,17 @@
         "id": "2-5",
         "blocks": [
           {
-            "id": "box-id-654634653",
-            "x": 60,
-            "y": 3603,
-            "width": 1126,
-            "height": 52,
-            "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[19]/article[1]/section[5]/wc-carousel[1]/div[1]",
+            "id": "box-id-1731285069",
+            "x": 70,
+            "y": 3476,
+            "width": 1440,
+            "height": 324,
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[19]/article[1]/section[5]",
             "layout": {
               "numCols": 0,
               "numRows": 0
             },
-            "color": "rgba(0, 0, 255, 0.2)",
-            "mapping": "defaultContent",
-            "customBlockName": ""
-          },
-          {
-            "id": "box-id-654634684",
-            "x": 72,
-            "y": 3712,
-            "width": 1102,
-            "height": 546,
-            "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[19]/article[1]/section[5]/wc-carousel[1]/div[2]",
-            "layout": {
-              "numCols": 1,
-              "numRows": 1
-            },
-            "color": "rgba(0, 0, 255, 0.2)",
+            "color": "rgba(0, 0, 255, 0.3)",
             "mapping": "carousel",
             "customBlockName": ""
           },
@@ -303,8 +304,8 @@
               }
             ],
             "color": "rgba(0, 0, 255, 0.3)",
-            "mapping": "columns",
-            "customBlockName": ""
+            "mapping": "defaultContent",
+            "customBlockName": "carousel-bubble"
           },
           {
             "id": "box-id-1731285131",
@@ -333,7 +334,7 @@
           }
         ],
         "settings": {
-          "section-metadata-style": "dark-green,center"
+          "section-metadata-style": "light-grey,center"
         }
       },
       {
@@ -386,7 +387,15 @@
             "color": "rgba(0, 0, 255, 0.2)",
             "mapping": "defaultContent",
             "customBlockName": ""
-          },
+          }
+        ],
+        "settings": {
+          "section-metadata-style": "columns,very-light-grey"
+        }
+      },
+      {
+        "id": "2-7",
+        "blocks": [
           {
             "id": "box-id-1661167977",
             "x": 327,
@@ -426,12 +435,18 @@
             "color": "rgba(0, 0, 255, 0.2)",
             "mapping": "cards",
             "customBlockName": ""
-          },
+          }
+        ],
+        "settings": {}
+      },
+      {
+        "id": "2-8",
+        "blocks": [
           {
             "id": "box-id-181205706",
-            "x": 0,
-            "y": 6307,
-            "width": 1231,
+            "x": 70,
+            "y": 6312,
+            "width": 1440,
             "height": 404,
             "xpath": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[20]",
             "layout": {
@@ -454,7 +469,7 @@
           }
         ],
         "settings": {
-          "section-metadata-style": "center"
+          "section-metadata-style": "cards"
         }
       }
     ]
