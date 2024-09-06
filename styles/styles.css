@@ -89,6 +89,14 @@
   }
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: none;
   margin: 0;
@@ -179,13 +187,11 @@ button {
 /* links */
 a:any-link {
   color: var(--link-color);
-  text-decoration: none;
   word-break: break-word;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: none;
 }
 
 /* buttons */
