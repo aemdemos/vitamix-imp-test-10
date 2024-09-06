@@ -3,14 +3,14 @@
 
 @font-face{font-family:"Sentinel B";src:url('../fonts/sentinelB300.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Sentinel A";src:url('../fonts/sentinelA500.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Sentinel A";src:url('../fonts/sentinelA500.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Sentinel B";src:url('../fonts/sentinelB500.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Sentinel B";src:url('../fonts/sentinelB500.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Gotham Narrow SSm A";src:url('../fonts/gothA400.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Gotham Narrow SSm A";src:url('../fonts/gothA400.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Gotham Narrow SSm B";src:url('../fonts/gothB400.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Gotham Narrow SSm B";src:url('../fonts/gothB400.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Gotham Narrow SSm A";src:url('../fonts/gothA500.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Gotham Narrow SSm A";src:url('../fonts/gothA500.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
 
-@font-face{font-family:"Gotham Narrow SSm B";src:url('../fonts/gothB500.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Gotham Narrow SSm B";src:url('../fonts/gothB500.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
