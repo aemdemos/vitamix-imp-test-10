@@ -56,6 +56,20 @@ function buildAutoBlocks(main) {
 }
 
 /**
+ * Decorates linked pictures in a given block.
+ * @param {HTMLElement} block - The block element containing the pictures.
+ */
+function decorateLinkedPictures(block) {
+  block.querySelectorAll('picture + br + a').forEach((a) => {
+    // remove br
+    a.previousElementSibling.remove();
+    const picture = a.previousElementSibling;
+    a.textContent = '';
+    a.append(picture);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -132,18 +146,3 @@ async function loadPage() {
 }
 
 loadPage();
-
-/**
- * Decorates linked pictures in a given block.
- * @param {HTMLElement} block - The block element containing the pictures.
- */
-function decorateLinkedPictures(block) {
-  block.querySelectorAll('picture + br + a').forEach((a) => {
-    // remove br
-    a.previousElementSibling.remove();
-    const picture = a.previousElementSibling;
-    a.textContent = '';
-    a.append(picture);
-  });
-}
-
