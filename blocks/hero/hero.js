@@ -54,5 +54,6 @@ export default async function decorate(block) {
   if (!link) return;
 
   const video = getVideoElement(link);
-  block.querySelector('a').replaceWith(video);
+  const a = block.querySelector('a');
+  (a.parentElement.tagName === 'P' ? a.parentElement : a).replaceWith(video);
 }

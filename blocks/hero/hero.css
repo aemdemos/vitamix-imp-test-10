@@ -29,6 +29,10 @@
 .hero.video h1 {
   margin-top: 0;
   margin-bottom: 0;
+  animation: fade-in-animation 1.5s ease 4.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
 }
 
 .hero.video p {
@@ -38,6 +42,10 @@
   height: 26px;
   letter-spacing: 2.4545px;
   line-height: 26.1818px;
+  animation: fade-in-animation 1.5s ease 4.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
 }
 
 .hero picture {
@@ -77,7 +85,20 @@
   left: 0;
   right: 0;
   background: color-mix(in srgb,#262626 75%,transparent);
+  animation: fade-in-animation 1.5s ease 4.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
+}
 
+@keyframes fade-in-animation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .hero .explore-icon {
