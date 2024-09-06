@@ -32,8 +32,8 @@
   --color-button-secondary-text: #40596b;
 
     /* fonts */
-  --body-font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", helvetica, sans-serif;
-  --heading-font-family: "Sentinel A", "Sentinel B", georgia, serif;
+  --body-font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Gotham Narrow SSm Fallback", helvetica, sans-serif;
+  --heading-font-family: "Sentinel A", "Sentinel B", "Sentinel Fallback", georgia, serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -55,15 +55,25 @@
 
 /* fallback fonts */
 @font-face {
-  font-family: "Sentinel A";
-  size-adjust: 88.82%;
+  font-family: 'Sentinel Fallback';
+  font-style: normal;
+  font-weight: 300;
   src: local('Arial');
+  ascent-override: 96.00%;
+  descent-override: 24.00%;
+  line-gap-override: 0.00%;
+  size-adjust: 100.00%;
 }
 
 @font-face {
-  font-family: "Sentinel A";
-  size-adjust: 99.529%;
+  font-family: 'Gotham Narrow SSm Fallback';
+  font-style: normal;
+  font-weight: 400;
   src: local('Arial');
+  ascent-override: 96.00%;
+  descent-override: 24.00%;
+  line-gap-override: 0.00%;
+  size-adjust: 100.00%;
 }
 
 @media (width >= 900px) {
