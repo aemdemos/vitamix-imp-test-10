@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--content-background-color);
+  background-color: #fafafa;
   width: 100%;
 }
 
