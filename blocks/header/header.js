@@ -117,7 +117,10 @@ export default async function decorate(block) {
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  for (let i = 0; i < 3; i += 1) {
+    nav.append(fragment.firstElementChild);
+  }
+  while (fragment.firstElementChild) block.append(fragment.firstElementChild);
 
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
@@ -162,5 +165,5 @@ export default async function decorate(block) {
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
-  block.append(navWrapper);
+  block.children[1].after(navWrapper);
 }
