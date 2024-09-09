@@ -139,15 +139,29 @@ export default async function decorate(block) {
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
+      navSection.addEventListener('mouseover', () => {
         if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          block.querySelector('.section.menu.columns-container').style.display = 'flex';
+          // const expanded = navSection.getAttribute('aria-expanded') === 'true';
+          // toggleAllNavSections(navSections);
+          // navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        }
+      });
+      navSection.addEventListener('mouseout', () => {
+        if (isDesktop.matches) {
+          block.querySelector('.section.menu.columns-container').style.display = 'none';
+          // const expanded = navSection.getAttribute('aria-expanded') === 'true';
+          // toggleAllNavSections(navSections);
+          // navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         }
       });
     });
   }
+
+  block.querySelectorAll('.section.menu.columns-container .button').forEach((btn) => {
+    btn.className = '';
+    btn.closest('.button-container').className = '';
+  });
 
   // hamburger for mobile
   const hamburger = document.createElement('div');
@@ -157,10 +171,20 @@ export default async function decorate(block) {
     </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
   nav.prepend(hamburger);
-  nav.setAttribute('aria-expanded', 'false');
+  nav.setAttribute('aria-expanded', 'true');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+
+  // search
+  const search = document.createElement('div');
+  search.className = 'nav-search';
+  search.innerHTML = `<input name="search" type="text" id="SearchText" placeholder="Search">
+    <input type="submit" id="searchButton" text="" value="">`;
+  const target = block.querySelector('.section.top2.search > div');
+  if (target) {
+    target.append(search);
+  }
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
