@@ -22,6 +22,7 @@
   --color-background-secondary: #333f48;
   --color-background-tertiary: #262626;
   --color-background-quaternary: #192631;
+  --color-accent-secondary: #a2aaad;
 
   /* buttons */
   --color-button-primary: #fff;
@@ -39,7 +40,7 @@
   --body-font-size-l: 16px;
   --body-font-size-m: 16px;
   --body-font-size-s: 14px;
-  --body-font-size-xs: 17px;
+  --body-font-size-xs: 13px;
 
   /* heading sizes */
   --heading-font-size-xxl: 75px;
@@ -317,6 +318,75 @@ main .section.highlight {
 .section.quaternary {
   color: #fff;
   background-color: var(--color-background-quaternary);
+}
+
+main .section.ognm-navigation-info {
+  position: relative;
+  text-align: center;
+  padding-top: 16px;
+}
+
+main .section.ognm-navigation-info::before {
+  background: linear-gradient(to right, transparent 0, var(--color-background-quaternary) 100%);
+  content: " ";
+  display: block;
+  height: 100%;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity .3s ease;
+  width: 70px;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+main .section.ognm-navigation-info p {
+  margin: 0;
+}
+
+main .section.ognm-navigation-info img {
+  width: 30px;
+  float: inline-start;
+  margin-right: 8px;
+}
+
+main .section.ognm-navigation-info .columns a {
+  text-decoration: none;
+}
+
+main .section.ognm-navigation-info > div {
+  margin: 0 32px;
+  padding: 0;
+}
+
+main .section.ognm-navigation-info .columns > div {
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  height: 60px;
+  font-size: var(--body-font-size-xs);
+}
+
+main .section.ognm-navigation-info .columns > div > div {
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+main .section.ognm-navigation-info .columns .columns-img-col > p {
+  display: flex;
+  align-items: center;
+}
+
+main .section.ognm-navigation-info > .default-content-wrapper::after {
+  background-color: var(--color-accent-secondary);
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 8px auto 0;
+  overflow: hidden;
+  width: 52px;
 }
 
 main .section.columns.center ul {
