@@ -36,8 +36,9 @@
   --heading-font-family: "Sentinel A", "Sentinel B", "Sentinel Fallback", georgia, serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
+  --body-font-size-l: 16px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
   --body-font-size-xs: 17px;
 
   /* heading sizes */
@@ -75,6 +76,7 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
+    --body-font-size-l: 22px;
     --body-font-size-m: 16px;
     --body-font-size-s: 14px;
     --body-font-size-xs: 12px;
